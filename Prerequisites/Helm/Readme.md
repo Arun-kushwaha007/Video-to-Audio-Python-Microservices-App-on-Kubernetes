@@ -220,15 +220,18 @@ helm lint mychart
 
 🔒 Best Practices: https://helm.sh/docs/chart_best_practices/
 
+---
 ## 🏁 Summary
 
-**Feature**	          **Purpose**
-  Charts	            Package Kubernetes resources
-  Templates	            Dynamic YAML files
-  values.yaml         	Configuration for templates
-  helm install	        Deploy an app
-  helm upgrade	        Update the app
-  helm rollback	        Roll back to a previous version
-  helm repo	            Manage remote charts
-  helm create	        Bootstrap a new chart
+| **Feature**	    |      **Purpose**                  |
+|-------------------|-----------------------------------|
+|  Charts	        |    Package Kubernetes resources   |
+|  Templates	    |    Dynamic YAML files             |
+|  values.yaml      |    Configuration for templates    |
+|  helm install	    |    Deploy an app                  |
+|  helm upgrade	    |    Update the app                 |
+|  helm rollback	|    Roll back to a previous version|
+|  helm repo	    |    Manage remote charts           |
+|  helm create	    |    Bootstrap a new chart          |
 
+---
