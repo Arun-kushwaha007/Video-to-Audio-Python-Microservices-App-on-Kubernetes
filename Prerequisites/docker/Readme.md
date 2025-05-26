@@ -33,7 +33,7 @@ _Imagine a layer cake, where each layer is a full operating system!_
 - **Lightweight:** Containers share the host OS kernel, making them much lighter than VMs.
 - **Portable:** Package your application and all its dependencies into a single container.
 - **Consistent:** Run the same container on any machine with Docker installed—no more "it works on my machine" issues.
-
+- **Isolation:** Containers are isolated from each other and the host system, ensuring security and stability.
 > **In short:** Containerization lets you deploy applications quickly, efficiently, and reliably—without the overhead of full virtual machines.
 ---
 
