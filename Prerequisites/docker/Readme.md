@@ -20,6 +20,7 @@ To solve this, **virtualization** (think: Virtual Machines or VMs) was introduce
 - **Slower Performance:** Each VM runs a full operating system on top of your host OS, which adds overhead.
 - **Complexity:** Managing multiple VMs can be cumbersome.
 
+
 _Imagine a layer cake, where each layer is a full operating system!_
 
 ---
@@ -91,26 +92,33 @@ Docker is an open-source platform for developing, shipping, and running applicat
 
 - Download Docker Desktop for Windows from [Docker's official website](https://www.docker.com/products/docker-desktop) and follow the instructions.
 
+
 ---
 
 
 
-Docker conatians few parts: 
-1. Runtime (look file docker.drawio)
+## 🧩 Docker Architecture: Main Components
 
-       => it starts or stops the container. 
-        - run c
-        - container d
+Docker consists of several key parts:
 
+1. **Container Runtime**  
+   Responsible for starting and stopping containers.
+   - **runc:** The low-level runtime that actually starts and stops containers.
+   - **containerd:** A higher-level runtime that manages `runc` and handles container lifecycle operations.
 
+2. **Docker Engine**  
+   The core part of Docker, often referred to as the Docker daemon.
+   - Acts as a server that receives commands (like `docker run ubuntu`) from the Docker client.
+   - The daemon communicates with the container runtime to create and manage containers.
+   - This follows a client-server architecture.
 
+3. **Orchestration Engine**  
+   Allows you to manage and coordinate multiple containers across different hosts.
+   - Examples include **Docker Swarm** (built-in) and **Kubernetes** (industry standard).
+   - These tools help with scaling, load balancing, and automated deployment of containers.
 
-
-
-
-
-
-
+ 
+![Docker Architecture](./docker.png)
 
 ---
 
