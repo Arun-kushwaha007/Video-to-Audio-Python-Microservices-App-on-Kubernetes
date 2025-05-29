@@ -93,6 +93,27 @@ Docker is an open-source platform for developing, shipping, and running applicat
 
 ---
 
+
+
+Docker conatians few parts: 
+1. Runtime (look file docker.drawio)
+
+       => it starts or stops the container. 
+        - run c
+        - container d
+
+
+
+
+
+
+
+
+
+
+
+---
+
 ## 🐳 Basic Docker Commands
 
 ### Running a Container
