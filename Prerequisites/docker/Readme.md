@@ -153,6 +153,18 @@ docker stop <container_id>
 ```bash
 docker rm <container_id>
 ```
+### Fetch all info about container
+```bash
+docker inspect <container_id>
+```
+### all the logs
+```bash
+docker logs <container_id>
+```
+### Delete all the containers
+```bash
+docker prune -f 
+```
 
 ---
 
