@@ -165,6 +165,10 @@ docker logs <container_id>
 ```bash
 docker prune -f 
 ```
+### commit a container
+```bash
+docker commit -m "message" <container_id> image_name
+```
 
 ---
 
