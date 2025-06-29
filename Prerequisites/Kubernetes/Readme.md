@@ -2,13 +2,13 @@
 
 ## What is Kubernetes?
 
-Kubernetes (also known as K8s) is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications.
+Kubernetes (also known as K8s) is an open-source container orchestration platform(infact much more than just an orchestrator) designed to automate the deployment, scaling, and management of containerized applications.
 
 ---
 
 ## Why Kubernetes?
 
-- **Orchestration**: Automatically manage and schedule containers.
+- **Orchestration**: Automatically manage and schedule containers.(helps us in deploying and manging containers dynamically)
 - **Scalability**: Easily scale applications up or down.
 - **Self-healing**: Automatically replaces failed containers.
 - **Load Balancing**: Distributes network traffic effectively.
@@ -18,11 +18,14 @@ Kubernetes (also known as K8s) is an open-source container orchestration platfor
 
 ## Core Concepts
 
+### Kubernetes Cluster 
+   it is just collection of worker nodes(simply just a server) and Control plane(which was previously known as master node).
+
 ### Node
 A worker machine where containers are deployed. It can be a virtual or physical machine.
 
 ### Pod
-The smallest deployable unit in Kubernetes. A Pod can contain one or more containers.
+The smallest deployable/Scheduling unit in Kubernetes. A Pod can contain one or more containers.
 
 ### Service
 An abstraction that defines a logical set of Pods and a policy by which to access them.
