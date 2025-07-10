@@ -13,6 +13,7 @@ Kubernetes (also known as K8s) is an open-source container orchestration platfor
 - **Self-healing**: Automatically replaces failed containers.
 - **Load Balancing**: Distributes network traffic effectively.
 - **Rolling Updates & Rollbacks**: Update applications with zero downtime.
+-
 
 ---
 
