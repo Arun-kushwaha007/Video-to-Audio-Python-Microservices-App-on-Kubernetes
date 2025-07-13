@@ -18,6 +18,7 @@ Kubernetes (also known as K8s) is an open-source container orchestration platfor
 ---
 
 ## Core Concepts
+<img src= "./kubernetes.png">
 
 ### Kubernetes Cluster 
    it is just collection of worker nodes(simply just a server) and Control plane(which was previously known as master node).
@@ -35,6 +36,31 @@ An abstraction that defines a logical set of Pods and a policy by which to acces
 Manages the deployment and scaling of a set of Pods.
 
 ---
+## Steps for running application in K8s
+# => create microservices
+# => containerize every microservie
+# => put container in pods
+# => deploy these pods to controllers  -  Controllers - in kubernetes, contorllers are control loops that watch the state of your cluster, then make or request changes where needed. Each controller tries to move the current cluster state closer to the desired state.  / Deployment controller ("build-in" controllers)
+
+
+## control Plane
+it is a collection of various components that help us in managing the overall health of the cluster.
+  <img src= "./controlPlane_arch.png">
+-> API Server : All the communication will happen via the api server - Listen at HTTPS/port:443
+-> etcd : it is database that stores info and states about the entire cluster.
+-> Control manager : it manages the controller . it has 4 function: 1. manages Desired State(DS) 2. manages Current State (CS) 3. can checkout the differences. 4. make the changes.
+-> Scheduler : responsible for scheduling the stuffs. it is the one who will the schedule the task on worker nodes
+
+
+
+## Worker Node
+  <img src= "./Complete_arch.png">
+
+-> Kubelet : it will listen to api server and will communicate with container runtime
+-> Kube-Proxy : it is reponsible for networking.it will provide unique ip address to each nodes
+
+----> K8s DNS
+
 
 ## Installation
 
