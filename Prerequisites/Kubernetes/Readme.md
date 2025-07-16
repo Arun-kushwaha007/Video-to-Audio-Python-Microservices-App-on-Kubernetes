@@ -149,9 +149,9 @@ kubectl version --client
 
 ### Cluster Information
 ```bash
-kubectl version                       # Show Kubernetes version info
-kubectl cluster-info                  # Display cluster information
-kubectl get nodes                     # List all nodes in cluster
+kubectl version                       
+kubectl cluster-info                
+kubectl get nodes                    
 ```
 
 ### Pod Management
