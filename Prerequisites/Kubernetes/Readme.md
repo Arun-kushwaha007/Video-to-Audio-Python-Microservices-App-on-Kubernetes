@@ -168,7 +168,7 @@ kubectl delete pod <pod-name>         # Delete a specific pod
 kubectl get deployments              # List all deployments
 kubectl create deployment <name> --image=<image>  # Create deployment
 kubectl scale deployment <name> --replicas=3      # Scale deployment
-kubectl rollout status deployment/<name>          # Check rollout status
+kubectl rollout status deployment/<name>         
 ```
 
 ---
