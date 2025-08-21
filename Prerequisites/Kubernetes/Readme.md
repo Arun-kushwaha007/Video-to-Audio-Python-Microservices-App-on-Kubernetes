@@ -66,7 +66,7 @@ A controller that manages the deployment and scaling of a set of Pods, ensuring 
 
 ## 🎛️ Control Plane Components
 
-![Control Plane Architecture](./controlPlane_arch.png)
+![Control Plane Architecture](./controlPlane_arch.png)https://github.com/Arun-kushwaha007/Learning-.git
 
 The control plane manages the overall health and state of the cluster:
 
@@ -165,6 +165,7 @@ kubectl delete pod <pod-name>         # Delete a specific pod
 
 ### Deployment Management
 ```bash
+kubectl dashboard 
 kubectl get deployments              # List all deployments
 kubectl create deployment <name> --image=<image>  # Create deployment
 kubectl scale deployment <name> --replicas=3      # Scale deployment
